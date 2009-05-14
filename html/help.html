@@ -1,0 +1,536 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Keywords" content="worship planning">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Worship Planning and Archiving Sysem Help</title>
+</head>
+<body>
+<h2>Worship Service Planning and Archiving System - Version 0.5</h2>
+<font size="2">Written By <a href=\"http://www.netouerkz.co.uk\">Netouerkz Computer Services</a>
+</font>
+<h3>Contents</h3>
+<b><a href="#intro">Introduction</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#intsum">Summary</a><br>
+	<a href="#credits">Credits</a><br>
+	<a href="#license">License</a><br>
+	<a href="#disclaim">Disclaimer</a><br>
+	<a href="#dinote">A Note about Data Integrity</a><br>
+</div>
+<b><a href="#start">Getting Started</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#login">Logging In</a><br>
+	<a href="#frames">Frames</a><br>
+	<a href="#mydet">Checking and Updating Details</a><br>
+</div>
+<b><a href="#teamman">Team Manager</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#teamintro">Introduction</a><br>
+	<a href="#teamsum">Team Summary</a><br>
+	<a href="#teamadd">Add a Team Member</a><br>
+	<a href="#teamdel">Delete a Team Member</a><br>
+	<a href="#teamed">Edit a Team Member</a><br>
+	<a href="#teammail">Email Team</a><br>
+	<a href="#teamstruct">Manage Team Structures</a><br>
+	<a href="#teamview">View Team Expected at a Service</a><br>
+</div>
+<b><a href="#rota">Rota Manager</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#rotaintro">Introduction</a><br>
+	<a href="#rotaview">View Rota</a><br>
+	<a href="#managerota">Manage Rota</a><br>
+</div>
+<b><a href="#songman">Song Manager</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#songint">Introduction</a><br>
+	<a href="#addbook">Add a New Book</a><br>
+	<a href="#addsong">Add a New Song</a><br>
+	<a href="#songpick">Song Picker</a><br>
+	<a href="#booked">Edit a Book</a><br>
+	<a href="#songed">Edit a Song</a><br>
+	<a href="#merge">Merge Songs</a><br>
+	<a href="#delete">Delete a Song or a Book</a><br>
+</div>
+<b><a href="#planning">Planning Your Service</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#servintro">Introduction to the Service Planner</a><br>
+	<a href="#editplan">Create or Edit a Service Plan</a><br>
+    <a href="#viewplans">View Existing Plans</a><br>
+    <a href="#delplans">Delete Existing Plans</a><br>
+</div>
+<b><a href="#stats">Statistical Analysis</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#statint">Introduction</a><br>
+	<a href="#mostpop">Most Popular Songs</a><br>
+	<a href="#mostpopread">Most Popular Readings</a><br>
+    <a href="#songpop">How Popular is a Particular Song?</a><br>
+	<a href="#least">Least Used Songs</a><br>
+	<a href="#unlisted">Unlisted Songs</a><br>
+    <a href="#activity">Activity Log</a><br>
+</div>
+<a href="#tips"><b>A Few Tips</a></b><br>
+<div style="margin-left: 40px;">
+	<a href="#dataint">Data Integrity</a><br>
+	<a href="#servrec">Record ALL Services</a><br>
+	<a href="#uptodate">Keep Services Up-to-Date</a><br>
+</div>
+<a href="#contact"><b>Contacts</a></b><br><br>
+<h1><a name="intro">Introduction</a></h1>
+<h2><a name="intsum">Summary</a></h2>
+<p>The Worship Planning and Archiving System is a
+database driven worship planning and analysis system that enables your
+worship leaders to plan and print out services, store their service plans
+on a central database, and run statistical analysis on past services. It
+incorporates a song list that enables you to select songs by musical style
+and lyrical subject, and to add new songs to the database. Service plans are
+archived on the database. This means that statistical analysis is possible
+such as;
+"Which songs have been used the most?" "Which songs have been used least?"
+"How much use has a particular song had?"</p>
+<p>Since version 0.3 the system includes team and rota management. This enables you to
+organize your team members into sub-teams and allocate sub-teams to particular services.
+It includes a substitution system where a team member may have a stand-in. If the team member is unavailable then they simply indicate this on the system, and the stand-in is automatically informed.</p>
+<p>With the introduction of team management it is possible to email rotas and completed service plans to your team. Simply plan your service or rota, and with a couple of extra clicks your team will be sent the plan via email.</p>
+<h2><a name="credits">Credits</a></h2>
+<p>The Worship Planning and Archiving System is written and maintained by
+Philip Ward of <a href="http://www.netouerkz.co.uk">Netouerkz Computer
+Services</a>.<br>
+The documentation is written and maintained by Philip Ward and Alastair
+Rosie.<br>
+Netouerkz Computer Services may be contacted via email on
+<a href="mailto:service@netouerkz.co.uk">service@netouerkz.co.uk</a> or
+by telephone on 07947303971.<br>
+Extensive Modifications by <a href="mailto:admin@harrisonhills.org">Dave Leffler</a>.</p>
+<h2><a name="license">License</a></h2>
+All code and documentation is Copyright 2004 Netouerkz Computer
+Services.<br>
+The Worship Service Planning and Archiving System is Free Software
+distributed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU
+General Public License</a>. As such, you are permitted to use, copy,
+modify and share it under the terms of the <b>GPL.</b>
+
+<h2><a name="disclaim">Disclaimer</a></h2>
+This system comes with no warranty, express or implied. Netouerkz
+Computer Services are not liable for any loss of data or equipment, or
+any other loss that may result in using this system. If you require
+warranty protection this can be purchased from Netouerkz Computer
+Services.<br>
+
+<h2><a name="dinote">A Note about Data Integrity</a></h2>
+<p>In order to access this system you have to enter a username and
+password. This is to ensure that only authorized users can access the
+system and add/modify the data. Once you have system access, there are
+very few restrictions on what you can do if you have the appropriate privileges.
+You may be able to add and delete any
+songs you wish, and create and modify any service plans you wish.
+We trust our worship team members to act responsibly with the data on this
+system, however, as a precautionary measure this system logs each data
+transaction that adds, deletes or modifies data. In other words, if you
+find a song deleted or modified, or a service plan messed up then
+please let the administrators know, and they will be able to determine
+the user responsible.</p>
+<h1><a name="start">Getting Started</a></h1>
+<h2><a name="login">Logging In</a></h2>
+<p>This system is web based and therefore needs to be kept secure. For this reason it 
+cannot be accessed unless you first log on with your username and password. Your system administrator will have supplied you with a username and password. Once you enter these you will have access to the system. Your username and password also allow the system to identify you and grant you appropriate privileges. Most worship team members will be given "member" privileges which will enable you to update your own details and view most data held on the system. Worship leaders, Music team leaders, and one or two other people will be given "leader" privileges which also allows them to add / remove / change songs, update service plans, add / remove / change team members and update team structures. An elite few will be given "admin" privileges. Admins can do all that Leaders can, plus 
+organize rotas.</p>
+<p>This document will highlight in each section which privileges are required in order to access the functionality described therein.</p>
+<h2><a name="frames">Frames</a></h2>
+<p>If your browser does not support frames then you will automatically
+be given the no-frames version of this system. If your browser does
+support frames but you find that the screen looks too cluttered, (which
+is likely if you are using a low-resolution monitor or lap-top display)
+then you can select the no-frames version using the link at the top
+left of the page. The frames version makes it easier to navigate the
+system, but no functionality is lost if you use the no-frames version.<br>
+If you use the frames version then all frames can be resized by holding your 
+cursor over the frame border, clicking and holding down the left mouse 
+button and dragging it up, down or across.</p>
+
+<h2><a name="mydet">Checking and Updating Details</a></h2>
+<p>When you login you are encouraged to check your details and change your password.
+Click the "<u>My Details</u>" link in the top banner.</p>
+<p>Details recorded are Name, Telephone, Email, Privilege level and Roles. The right hand column displays your current responsibilities. If any of your details need to be updated, or if you wish to change your password, then click the "<u>Edit Details</u>" link. The only detail you cannot change here is your privilege level. If you change your roles, please make sure that the list of roles forms a comma 
+separated list.</p>
+<p>Under the list of responsibilities is the "<u>View Rota and Advise any Absences</u>" link. Click this link and select your date range and services. The date range defaults to a three month window starting at the beginning of last month and ending at the end of next month. Click the "<b>Show Rota</b>" button to view a table showing your responsibilities over the selected date range. If you are unable to fulfill any of the responsibilities listed then click the radio button in the "<b>No Can Do</b>" column for that responsibility. You can also click the "<b>I'll Be There</b>" radio button if circumstances change and you are available for a responsibility previously marked as "<b>No Can Do</b>". Click the "<b>Submit Availability</b>" button to confirm these changes. Any changes made will result in emails being sent to the appropriate team leaders and (if possible) the person next on the list to substitute you for the affected responsibilities.</p>
+
+<h1><a name="teamman">Team Manager</a></h1>
+<h2><a name="teamintro">Introduction</a></h2>
+<p>The Team Manager is the place to organize your worship team. Here you can view your team and their roles, add, delete and edit team members, send an email to any or all team members, manage your team structures and see whom you can expect at a particular service.</p>
+<h2><a name="teamsum">Team Summary</a></h2>
+<p>Here you can view a summary of your whole team. There are three options.
+<ul>
+	<li>Show all Teams - Displays your worship team structures. This view will not show any members who are not allocated to a team.
+	<li>List people and their roles - Displays all team members in alphabetical order and what their roles and responsibilities are.
+	<li>List roles and their people - Displays all the roles available and lists against them which team members are responsible for those roles.
+</ul>
+<h2><a name="teamadd">Add a Team Member</a></h2>
+<p>Adding team members can only be accessed by those with leader or admin privileges. Those with member privileges will not see this option on the Team Manager menu.</p>
+<p>Before adding a team member check the list at the top of the window. It lists all recorded members. To add a new team member simply fill in all the requested details. Leave Telephone and Email as "Unknown" if you do not have the details, these are special values that indicate not just to the reader, but to the system that these details are not yet known. Give the new member a username, password and privilege level. Leaders can only assign privilege of member or leader, while admins can assign admin privileges as well.</p>
+<p>The roles list requires special attention. The list is a comma separated list of values. It is also case sensitive, so the system will treat "singer" and "Singer" as 
+separate roles. There are two roles that are treated specially - "Team Leader" and "Worship Leader". If your new member is a music team leader or worship leader then please use these values rather than making up your own labels for these roles.
+<p>Click on the "<b>Submit New Member</b>" button and the new member will be created in the database, provided that the Name and username do not clash with an already existing entry.</p>
+<p>You should then get in touch with the new team member to let them know their username and password. <b>Please do not send username or password details via unencrypted email.</b></p>
+
+<h2><a name="teamdel">Delete a Team Member</a></h2>
+<p>Only admins are able to delete team members, other users will not see this option on the Team Manager menu.</p>
+Choose the team member to delete and click the "<b>Delete Member</b>" button. The next page will list that member's details and ask you to confirm deletion. If you click the "<b>Delete &lt;name&gt;</b>" button then that team member will be removed from the system and the team structures will be shuffled to remove them. You are advised to double check the team structures if you delete a member.<h2><a name="teamed">Edit a Team Member</a></h2>
+<p>Admins and leaders are able to edit team member details, users with member privileges will not see this option on the Team Manager menu.</p>
+<p>Choose the member to edit then update their details. The system will warn you if you make a change that compromises data integrity, such as removing a role for which this person is responsible in one of the teams.
+
+<h2><a name="teammail">Email Team</a></h2>
+<p>All users of the system are able to use this feature.</p>
+<p>Enter your subject and message and select the members to whom you wish to send your message. All members that have an email address recorded on the system will appear on the right hand side of the page and will be selected by default. As this version does not support adding attachments to emails there is an intermediate page after the first page which prints a list of all the email addresses that you selected. If you need to send an attachment (and if it is a spreadsheet or Word document then consider if you really need to attach it rather than sending the contents as plain text) you can paste this list of email addresses into your own mail client. Click "<b>Send Email</b>" on the intermediate page to send your message.</p>
+
+<h2><a name="teamstruct">Manage Team Structures</a></h2>
+<p>Only admins are able to manage the team structures, other users will not see this option on the Team Manager menu.</p>
+<p>Here you can organize your team members into smaller teams. In the <a href="#rota">Rota Manager</a> you allocate teams to services. Here is where you 
+organize those teams.</p>
+<p>Either select an existing team from the drop down list, or enter a new team name to create a team from scratch. On the next page you will be presented with a table in which to 
+organize your team. Use the drop down lists to choose the roles that are to be filled in this team and to choose the people that are to fill these roles. You can have a role listed more than once (e.g. you can have more than one singer). You can also select up to 4 substitutes for a role. If the main person indicates that they are not available for a service for which this team is on the rota, then the system will let Sub1 know that they are now responsible and will let Sub2 know if Sub1 is not available - etc. You can delete an existing row by ticking the appropriate "<b>Delete</b>" box.</p>
+<p>Click the "<b>Submit Team</b>" button once you have finished your 
+organization, and the new team structure will be validated and, if found to be valid, will be written to the database. Validation checks two things. It checks that you have not allocated someone to a role for which they are not qualified (e.g. allocating someone to "Guitar" when Guitar is not on their list of roles will cause a validation failure), and it checks that no one has been given more than one role within the team (with the exception of "Team Leader" who can have another role). If validation checks fail then you will be told which entries are in violation. You can then choose to either go back, or force the invalid entries through.</p>
+
+<h2><a name="teamview">View Team Expected at a Service</a></h2>
+<p>All users can access this feature.</p>
+<p>This brings up a calendar with today's date highlighted in blue. Use the "<u>Next</u>" and "<u>Previous</u>" links if you need to see far into the past or future, and click on the day in which you are interested. That day should then turn blue. Once you have selected the day use the drop down box at the bottom to select the service and click the "<b>Show Team</b>" button. If the resulting page does not show any team members it is because no team has been placed on the rota for that service on that day. The system will display those whom you can expect at that service. It works by looking at the rota to see which team is on, reading the team 
+members from that team, and looking to see if any substitutions have been recorded. If you wish to email these people then click the "<b>Email Team</b>" button. The resulting email form is the same as in the "<a href="#teammail">Email Team</a>" feature, except that the people who are expected at the service will be listed on the left of the page and will be selected by default, and the rest of the worship team will be listed on the right of the page and will not be selected by default. Select your recipients, write your message, click "<b>Continue</b>" to get to the preview screen then click "<b>Send Email</b>".</p>
+
+<h1><a name="rota">Rota Manager</a></h1>
+<h2><a name="rotaintro">Introduction</a></h2>
+From here the main Worship rota can be viewed and managed. All users can access the "<u>View Rota</u>" feature but only admins can access the "<u>Manage Rota</u>" feature.
+
+<h2><a name="rotaview">View Rota</a></h2>
+<p>Select your date range and the services you are interested in and click "<b>Show Rota</b>". The main rota for the selected dates and services will be shown. If you select a large date range then expect a lot of data and a long wait.</p>
+
+<h2><a name="managerota">Manage Rota</a></h2>
+<p>Only admins can access this feature, all other users will not see this option in the Rota Manager menu.</p>
+<p>Select your date range and services and click "<b>Show Rota</b>". This will bring up a table on which to 
+organize your rota. For each selected service only the dates on which these services can occur will be shown. If you selected "Other" services then every day will be shown. This is because "Other" is to be used for one off services that could occur on any day of the week.</p>
+<p>For each service shown allocate a team. The teams are taken from those created in the "<a href="#teamman">Team Manager</a>" plus a "Misc" team which can be used when an ad-hoc team is to be used. Select the Worship Leader from the drop down list. The worship leader list is derived from all those team members that have "Worship Leader" as one of their roles. Enter the preacher's name (not via a drop down list, since guest preachers are common) and any notes (such as "Communion" or "Healing Service". Once you're finished click "<b>Submit Rota</b>". This will give you a preview of the rota plus the opportunity to email the rota to your team. If you select "Email Team" then you will be taken to a page where you can select the team members that are to receive the new rota before emailing it to them. Feel free to change the default message if you wish.
+
+<h1><a name="songman">Song Manager</a></h1>
+<h2><a name="songint">Introduction</a></h2>
+The Song Manager is the gateway to keeping your lists of songs and
+books in order. Frames users will always have the menu in the middle
+frame while the selected option runs in the lower frame. No-frames
+users will need to click on the "<u>Song Manager</u>" link at the top
+of the page in order to return to the menu after each action.<br>
+Using the "<u>Song Manager</u>" you can add songs and books, list
+songs based on
+musical style and lyrical category, edit song and book details, delete
+songs or books that are not in use, and also use the special "Merge Songs" feature.
+<h2><a name="addbook">Add a New Book</a></h2>
+<p>Only leaders and admins have access to this feature.
+The drop-down list at the top of the window gives
+a list of Song/Music books that our church uses. If you wish to
+add a book that is not on the list then enter the book's name and give
+it a reference code in the appropriate fields. The reference code will
+be used on service plans to inform the team which book to use, so
+please choose wisely. For example "Mission Praise" may have the code
+"MP" and "Songs of Fellowship" may have the code "SF".<br>
+<b>NB:</b> This system will not let you use a book name or code that
+are already in use.</p>
+<h2><a name="addsong">Add a New Song</a></h2>
+Only leaders and admins have access to this feature.
+Before adding a new song it is advisable to make sure that the song is 
+not already on the list
+using the "<a href="#songpick">Song Picker</a>" (see below). The song may
+already be on this 
+list with a different name, as sometimes the name of a song may be
+different from its first line. It is preferable to use the <u>name</u>
+of the song rather than the first line (for example list the song as 
+"Come, Lord Jesus" rather than as "Great is the Darkness").<br>
+Enter the song name, select the book it appears in and enter the song
+number. If the song appears in more than one book then choose the
+default book that your worship team should be using for this song. For
+example, our church uses "Songs of Fellowship" as our main resource,
+but we also have "Mission Praise" available. If a song appears in both
+books then you should choose "Songs of Fellowship" from the list and
+give the song the "Songs of Fellowship" number. If you do not know
+which book it appears in or what number it is then leave
+that box as "Unknown".<br>
+Next enter the musical styles and lyrical
+categories for the song in the remaining two boxes. The current styles
+and categories in use are listed below the boxes. If one or more of
+these fit then use them, or you can create your own new styles and
+categories simply by entering them in these boxes.<br>
+You can give a song more than one style or category by entering a comma
+separated list for example; entering "Power Praise, Country and
+Western" in the style box (without the quotes) will mean that the song
+will match both Power Praise and Country and Western in the 
+<a href="#songpick">Song Picker</a> (see below).<br><br>
+<b>NB:</b>
+A note about data integrity: The system will not let you add a song if
+the name has already been used, or if the book and number are already
+in use. The system is also <em>case sensitive</em>. This means that it
+will let you
+add both "You are the sovereign I am" and "You Are The Sovereign I Am"
+as two separate songs. If this happens then you can use the 
+"<a href="#merge">Merge Songs</a>" option (see below) to fix this.
+This also
+means that if (for example), "Reflective" is listed as a musical style
+and you enter "reflective" then both Reflective and reflective will
+appear as separate and distinctive styles in the 
+<a href="#songpick">Song Picker</a>.
+If mistakes are made adding songs then they can be rectified using the
+<a href="#songed">Edit Song</a> feature. Data integrity is the collective
+responsibility of all authorized users.<h2><a name="songpick">Song Picker</a></h2>
+<p>This allows the user to list all the songs on the system, optionally
+filtered by musical style and lyrical category.
+Select a musical style and lyrical category and click the "<b>Filter Songs</b>"
+button to give you a selection of songs that fit those two filters.<br>
+The styles and categories are based on the styles and categories given
+to the songs on the list. This means that if you create a new style or
+category when <a href="#addsong">adding a new song</a> (see above) then 
+your new style or category will appear in the appropriate list.</p>
+
+<h2><a name="booked">Edit a Book</a></h2>
+Only leaders and admins have access to this feature.
+This is a fairly straightforward option. Select the book you wish to
+edit then change either the name, code or both. This will automatically
+update the list of songs if the code changes in order to retain data
+integrity.<h2><a name="songed">Edit a Song</a></h2>
+Only leaders and admins have access to this feature.
+This is almost the same as adding a song, but you get to select a song
+to edit first. Use this to change the name, book, number, musical
+styles and lyrical categories. It won't let you perform the update if
+you change the name to one that clashes with another song or if you
+change the book and number to a book and number that clash with another
+song.<h2><a name="merge">Merge Songs</a></h2>
+Only leaders and admins have access to this feature.
+This feature is to be used in case a song is on the list twice under
+different names. Some songs have a name that is different from the
+first line of the first verse, but some people insist on referring to
+the song using the first line. An example would be "Come, Lord Jesus"
+which is often incorrectly referred to as "Great is the Darkness". If
+this song is listed with both names then it will throw your
+<a href="#stats">statistics</a> out (see below). You could end up with a 
+table showing that "Come, Lord Jesus" has been used 3 times and "Great is the
+Darkness" has been used 4 times over a given period, while the truth is
+that "Come, Lord Jesus" has been used 7 times.<br>
+In order to fix this kind of mess use the "<u>Merge Songs</u>"
+feature. In the first drop-down list select the <em>correct</em>
+song name. In the second list select the <em>incorrect</em> song name.
+Clicking the "<b>Merge Songs</b>" button will delete the incorrect song from
+the database, and will update all service plan records containing
+the incorrect song name to the correct song name.<h2><a name="delete">Delete a Song or a Book</a></h2>
+Only leaders and admins have access to these features.
+These two features allow you to delete songs or books from the list. You
+can only delete a song if it is not recorded as being used in any
+services, and you can only delete a book if there are no songs recorded
+as appearing in that book. If the system will not let you delete a song
+or book it will show you which services the song was used in, or which
+songs are still recorded as appearing in the book.<h1><a name="planning">Planning Your Service</a></h1>
+<h2><a name="servintro">Introduction to the Service Planner</h2>
+(<i>Integrated Interface added by Dave Leffler)</i> Use the service planner to 
+plan, review, and update the content and structure of your services.&nbsp; 
+Changes are only allowed by authorized users.&nbsp; You may also review existing 
+services for any given date or delete individual service plans. Choose what 
+you'd like to do.&nbsp; You may <a href="#editplan">create or edit a service 
+plan</a>, <a href="#viewplans">view all service plans</a> for a chosen date, or
+<a href="#delplans">delete a service plan</a>.&nbsp; From this main screen, you 
+may choose the date and service you wish to edit, edit the service and submit 
+your changes, optionally email the completed plan to those involved in the 
+service, and be given a printable service plan. Frames users will see the <a href="#songpick">Song Picker</a> displayed in the bottom window. This is so you can use the <a href="#songpick">Song Picker</a> to help you choose songs for the service.
+<h2><a name="editplan">Create or Edit a Service Plan</a></h2>
+<p>To create or edit a service plan, you'll first need to decide if you want to 
+create a new service plan, edit an existing one, or update a default service 
+structure by selecting the appropriate radio button.&nbsp; Essentially, the 
+create and edit options are similar.&nbsp; The <b>create</b> option uses the 
+displayed calendar and provides unlimited date options.&nbsp; If you select the date for 
+an existing service, that service will be edited instead of erased.&nbsp; 
+Likewise, the <b>edit</b> option simply limits the choices in its drop-down list 
+to those services that are known to exist, which makes it much easier to find a 
+service than using the calendar.&nbsp; The <b>edit default</b> option disregards 
+dates entirely and edits the default structure for the chosen service name.<br>
+1.&nbsp; To create a service plan, select that option button (<i>default choice</i>), 
+select a date on its calendar, select the service type from the drop down list, 
+and click on the &quot;<b>EDIT Plan</b>&quot; button.<br>
+2.&nbsp; To edit an existing service plan, select that option button, select a 
+date from its drop-down list, and then click on the &quot;<b>EDIT Plan</b>&quot; 
+button.<br>
+3.&nbsp; To edit the default structure of a service, select that option button, 
+select the service type from the drop down list, and click on the &quot;<b>EDIT 
+Plan</b>&quot; button.<br>
+An important point to note is that your service plan will not be
+committed to the database until you preview and then submit your
+changes. If you make changes and then select another (or the same)
+service or close your browser or surf away from the service planner
+without submitting your changes then they will be lost. If you are on a
+dial-up internet connection you can safely come off-line while planning
+your service. While off-line you can use the drop-down lists and text
+boxes in the service planner window. However, you must be on-line to
+preview and submit your service and must be on-line to use all other
+features of this system.<br>
+The Service Planner consists of a table with
+drop-down lists and input boxes. At the top of the table you will find
+the name of the service you are editing and three headings: <b>Seq, Type, Song Name/Reading etc.<br>
+</b>If you are creating a new service plan, the structure will be a copy of the 
+default plan for that service.<br>
+<b>Seq</b> or Sequence is where you select the order each item will
+appear on the final printout. This is useful if you wish to juggle the
+order of your items. If two items end up with the same sequence number
+then the item that appears first on the list will end up as the first
+of the two. If your service is looking messy with sequence numbers all
+over the place then "<b>Preview</b>" and "<b>Submit</b>" your service
+(see below) and use
+the "<a href="#servpick">Service Picker</a>" to select the service again.
+Your items will then be displayed in the selected order.<br>
+If you wish to delete an item from the service plan then set the
+sequence number to 0.<br>
+<b>Type</b> gives you a list of item types such as
+<i>Cong. Song (Congregational Song), Sermon, Reading,
+Perf. Song (Performed Song)</i> etc. Choose the option that best fits.
+In the rare event that your item does not appear in the list you can also 
+type in your own item description in the input box below the drop-down list.<br>
+<b>Song Name/Reading etc.</b> is where you enter the details of each item.
+The drop-down list can be used to select a song. If your selected item is not
+a song, or if the song name is not on the list then leave the drop-down
+list blank and enter the details into the box underneath the drop-down box.
+This could include the Bible reading reference for a reading, or the
+passage and preacher name for the sermon. If you enter a song that is
+not on the list then please take the time to visit the
+"<a href="#addsong">Add a New Song</a>" feature to add the song to the list.<br>
+The box at the bottom of each cell in this column is titled "<b>Notes</b>"
+and allows you to type in extra
+notes such as: "Play the last chorus 3 times", "Uplift the offering
+during this song" or a list of prayer points. This will
+also appear in the printout as well. You can type a maximum of <b>255</b>
+characters in this box, which amounts to a small paragraph.<br>
+Once this is finished, you can also go to the <b>Seq</b> column and
+change the sequence of your service.<br>
+When you're ready hit the "<b>Preview</b>"
+button to see a table with your service neatly laid out.<br>
+The preview window shows you what your service will look like, before
+it is submitted to the database. Take a look at the preview and
+see if your service plan is ordered as you want it. If anything is
+amiss then hit the back button on your browser to go back to the
+service planner. Hitting the Back button will take you back to your
+original service plan where you can make your changes. You need to
+submit the service to the database and then re-select the service
+before the service planner window will show your service plan in the
+correct order. If one of the cells in the preview is red this
+is because you have entered a song that is not on the list. The
+printable service plan that you will see when you submit your plan will
+not show the red highlight, this is simply to remind you to either
+check the song name, or to add the song to the list later on.<br>
+If the preview looks OK (or if you want to submit what you've done so
+far and come back later) then hit the "<b>Submit</b>"
+button. This will write your new (or amended) service plan to the
+database and give you a neat, printable version.</p>
+<p>There is the option here to email the completed service plan to your team.
+If you check the "Send Service Plan By Email" box before clicking "<b>Submit</b>"
+you will be taken to a page that
+allows you to select your recipients, edit the message and email the service plan.
+If a team has been allocated to this service on the rota, and any unavailable team members have indicated their unavailability then the team members whom you can expect at the service will be listed on the left of the page and those with stored email addresses will all be selected. All other team members with stored email addresses will be listed on the right of the page and will not be selected. Select your recipients, edit your message if necessary and click "<b>Send Email</b>". Click "<b>Continue</b>" on the next page to be given a printable version of your service plan.</p>
+<p><b>Printing Tips</b> -If using Internet Explorer, please make sure you
+have clicked on the service plan itself and then go to <b>File-&gt;Print
+Preview</b> and in the <b>Print Preview</b> dialog box select <b>Print
+Selected Frame</b>
+from the drop down box at the top right hand side. You may also wish to
+change the page setup in order to remove the extra details that appear
+at the top and bottom of the preview. Click the "<b>Print</b>"
+button on the top left hand side and your service will be printed out.<br>
+If using Mozilla the print preview does not allow you to preview a
+single frame. First edit the header and footer using the <b>File-&gt;Page
+Setup</b> menu option, select the frame you wish to print then select
+the <b>File-&gt;Print</b> option and select "<b>The Selected Frame</b>"
+from the <b>Frames</b> options at the bottom of the print dialog.<br>
+If using any other browser then please check that browsers
+documentation on how to print a single frame.</p>
+<h2><a name="viewplans">View Existing Service Plans</a></h2>
+<a name="viewplans">(<i>Interface revised by Dave Leffler)</i> To view the 
+service plans created for a particular date, select the date from that drop down 
+list and click the <b>VIEW Existing Plans</b> button.&nbsp; This option only 
+allows reviewing plans, you will not be able to edit or change them.&nbsp; 
+You'll also have the option of sending the plans by e-mail.</a><h2>
+<a name="delplans">Delete Existing Service Plans</a></h2>
+<a name="delplans">(<i>Interface revised by Dave Leffler)</i> To delete an 
+existing service plan</a><a name="viewplans0">, select the date from that drop 
+down list and click the <b>DELETE an Existing Plan</b> button. <b>
+<font color="#FF0000">There is no second chance with this option, when the 
+button is selected, that service plan is removed!</font></b></a><h1><a name="stats">Statistical Analysis</a></h1>
+<h2><a name="statint">Introduction</a></h2>
+Which songs have been over-sung to death? Which songs need the dust
+blown off them? Is brother moan-a-lot correct that his favorite hymn
+has not been used for ages? The answers to all these questions are
+available here, provided that you have been using this system to
+plan/record all services. 
+Frames users will
+always see the menu, and no-frames users will have to click on the
+"<u>Statistical Analysis</u>" link between actions.<h2><a name="mostpop">Most Popular Songs</a></h2>
+Select the date range you wish to analyze. It will default to the date
+of the oldest recorded service as the start and today's date as the
+end. Choose which service you are interested in and choose the maximum
+number of songs to return (i.e. top 10, top 20, top 100, top 37 or
+whatever) and hit the "<b>Get Stats</b>" button. If you choose a start
+date that is after the end date you will get no data.<br>
+The resulting table lists the songs in order of popularity with the
+song name on the left, the number of uses in the middle, and a
+drop-down list on the right which lists all the services (in the
+selection range) in which this song has been used.<h2><a name="mostpopread">Most Popular 
+Readings</a></h2>
+Select the date range you wish to analyze. It will default to the date
+of the oldest recorded service as the start and today's date as the
+end. Choose which service you are interested in and choose the maximum
+number of readings to return (i.e. top 10, top 20, top 100, top 37 or
+whatever) and hit the "<b>Get Stats</b>" button. If you choose a start
+date that is after the end date you will get no data.<br>
+The resulting table lists the readings in order of popularity with the
+reading on the left, the number of uses in the middle, and a
+drop-down list on the right which lists all the services (in the
+selection range) in which this reading has been used.<h2><a name="songpop">How Popular is a Particular Song?</a></h2>
+Choose your song, date range and service. The resulting table will show
+you how popular the song has been over the chosen services plus a list
+of services it has been used in.<h2><a name="least">Least Used Songs</a></h2>
+Choose your date range and service, and choose a threshold beyond which
+a song can be deemed as "popular". The default value is 0 and this will
+only show songs that have not been used at all over the selected
+period. Entering a threshold of 1 will result in songs that have been
+used 0 or 1 times, etc.
+
+<h2><a name="unlisted">Unlisted Songs</a></h2>
+Has a naughty worship leader used a song that is not on the list and forgotten to
+add it to the list. This feature will tell on them by displaying any songs that have been used that are not on the list.
+
+<h2><a name="activity">Activity Log</a></h2>
+Brings up the log of activity that's taken place as recorded by the program.&nbsp; 
+Use the Next/Prev buttons at the bottom to see the entire log.&nbsp; You may 
+clear the activity log using the button at the bottom.
+
+<h1><a name="tips">A Few Tips</a></h1>
+<h2><a name="dataint">Data Integrity</a></h2>
+This cannot be stressed enough. The authorized users are collectively
+responsible for maintaining data integrity. This means not editing services
+that you were not leading unless asked to by the worship leader. It means
+properly adding songs to the song list instead of just using unlisted songs in
+your services.<br>
+The administrators may scan the system for problems, but should not
+have to routinely fix bad data if the users are making a constant mess.
+Responsible editing of songs and service plans will help keep the
+system healthy.
+
+<h2><a name="servrec">Record ALL Services</a></h2>
+The statistics will be incorrect if any services are missed. If any worship
+leader does not like using this system then someone else should take
+their service plans and enter them onto the system.
+
+<h2><a name="uptodate">Keep Services Up-to-Date</a></h2>
+Services don't always go according to plan. If this is the case please
+come back after the service and update the plan to remove songs that
+were skipped, add songs that were added at the last minute, and record
+any other changes.
+
+<h1><a name="contact">Contacts</a></h1>
+<a href="http://www.netouerkz.co.uk">Netouerkz Computer Services</a>
+would love to hear from users of this system. If you require help using
+this system, would like to install this system on another machine, have
+an idea for another feature that could be included or just want to heap
+praise or scorn on the system then email
+<a href="mailto:service@netouerkz.co.uk">service@netouerkz.co.uk</a>.
+
+</body>
+</html>
