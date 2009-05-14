@@ -1,0 +1,81 @@
+This is the Worship Service Planning and Archiving System version 0.3 written by
+Philip Ward of Netouerkz Computer Services.
+This is a web based system written in Perl with a MySQL database backend.
+Before installing please ensure the following:-
+1. You have a working host system. This system has been written for GNU/Linux but should work on most Unix-like systems, and maybe even on Windows with some hacking (nutter). It has been spotted in the wild thriving on a FreeBSD system.
+2. You have a working MySQL server.
+3. You have a username and password on the server with privileges to create databases, select, delete, insert records and create tables.
+4. You have MySQL client available on your host.
+5. You have a working Web Server. Apache is the server of choice.
+6. You have a working Perl interpreter at /usr/bin/perl with DBI, CGI, Date::Pcalc, Apache::Htpasswd and Mail::Sender modules installed.
+7. Your Apache webserver is capable of executing cgi scripts in the directory in which you plan to install the cgi scripts (e.g. /var/www/cgi-bin).
+8. You'll have an easier time tweaking the database if you use phpMyAdmin.
+
+Once you have checked the above then run install.pl
+Read the instructions and follow them. If you make a mistake you can hit CTRL-c to quit, and then start again.
+If you make a mistake and realise once you have committed the changes then you can uninstall using the following steps.
+Delete the database you created.
+Delete your installation directories.
+Delete your htpasswords file.
+Start again.
+
+Rather than run through the install script without knowing what you'll be asked here's an overview of the questions. You may prefer to use this section to plan your answers before running the install script.
+
+You will be asked for the following database values:-
+	Host name of the database server.
+	Database name.
+	Username used to login to the database.
+	Password used to login to the database.
+
+You will be asked for details so that you can be created as a user of the system:-
+	Your full name.
+	Your preferred username.
+	Your preferred password.
+
+This system can send emails. You will be asked the following:-
+	Mailserver hostname. Note: Make sure that this server will happily 
+	                           accept and send messages for you.
+	Temp directory. Note: /tmp should be fine. The system uses this dir
+	                      to generate file in before attaching them to msgs.
+
+You'll be asked about your webserver and directroy paths therein:-
+	Full path to your website tree. 
+		Note: this may be /var/www/html or /usr/local/apache/htdocs 
+		or something else depending on your apache setup.
+	Relative path to your html directory.
+		Note: leave this blank if your html files are to be stored in
+		the top level directory.
+	Full path to your cgi directory.
+		Note: this may be /var/www/cgi-bin or /usr/local/apache/cgi-bin 
+		or something else depending on your apache setup.
+	Relative path to your images directory.
+		Note: leave this blank if your images are to go into yout top
+		level directory.
+	Relative path to your cgi directory.
+		Note: This is how Browsers access the cgi directory. While the
+		directory may be in ../cgi-bin from your document root, browsers
+		will access it via http://foo.bar.com/cgi-bin.
+		The value "cgi-bin" should work unless you have an exotic setup.
+	System URL.
+	Apache username.
+		Note: This is used to give ownership of the cgi files to the
+		user that apache runs as so that no one else using the 
+		system can read or execute the files.
+	Full path to htpasswords file.
+
+You will next be asked about how your services are organised:-
+	A list of services. 
+		Note: These can be any name, or the time of the service. Since 
+		the system lists services in the order they are entered here it
+		may be a good idea to start with your first Sunday service and
+		work your way chronologically through the week.
+	For each service enter a list of days on which they occur.
+	You will be shown a list of the types of activities that occur within
+	services. Activities such as Hymn, Reading, Sermon. List all the 
+	activities you can think of (or accept the suggested default). Note that
+	this list is not exhaustive and service planners can add their own
+	activities to the list.
+
+That's it. Once you have answered all these questions the application will be installed in the appropriate directories and should be ready to login at the appropriate URL.
+
+Comments and suggestions are always welcome at worship@netouerkz.co.uk
